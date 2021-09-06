@@ -19,4 +19,12 @@ export class TodoappsService {
     // ];
     return this.httpClient.get(this.url);
   }
+
+  createTodoApp(cardText: string) {
+    return this.httpClient.post<any>(this.url,{'cardText': cardText});
+  }
+
+  deleteTodo(id: number) {
+    return this.httpClient.delete(this.url + '/' + id)
+  }
 }

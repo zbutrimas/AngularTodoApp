@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import {RouterModule} from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import { HttpClientModule } from "@angular/common/http";
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: 'home', component: HomeComponent },
-      {path: 'todoapps', component: TodoappsComponent },
+      {path: 'home', component: HomeComponent},
+      {path: 'todoapps', component: TodoappsComponent},
       {path: '**', redirectTo: 'home', pathMatch: 'full'},
     ]),
+    FormsModule,
 
   ],
   providers: [],
