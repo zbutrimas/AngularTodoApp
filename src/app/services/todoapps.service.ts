@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class TodoappsService {
 
-  url = 'http://localhost:8081/main/todo'
+  url = 'http://localhost:8081/main/todoapps'
 
   constructor(private httpClient: HttpClient) { }
 
