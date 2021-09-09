@@ -24,7 +24,7 @@ import {TodoappsService} from "../../services/todoapps.service";
       <tfoot>
       <tr>
         <td></td>
-        <td><input name="cardText" class="form-control" [(ngModel)]="cardText"></td>
+        <td><input name="cardText" class="form-control lh-sm" [(ngModel)]="cardText"></td>
         <td>
           <button (click)="createTodo()" class="btn btn-dark me-2">Create</button>
         </td>
