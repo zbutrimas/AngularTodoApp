@@ -27,4 +27,8 @@ export class TodoappsService {
   deleteTodo(id: number) {
     return this.httpClient.delete(this.url + '/' + id)
   }
+
+  updateTodoApp(updateableTodo: any) {
+    return this.httpClient.put<any>(this.url + '/' + updateableTodo.id, updateableTodo);
+  }
 }
