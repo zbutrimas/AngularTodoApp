@@ -8,8 +8,7 @@ import {Component, OnInit} from '@angular/core';
         <div class="container-fluid">
         <a class="navbar-brand mx-3">
           <img src="https://icon-library.com/images/to-do-list-icon/to-do-list-icon-10.jpg"
-          alt="todo logo" width="30" height="30">
-          Todo apps navbar</a>
+          alt="todo logo" width="30" height="30"></a>
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
@@ -26,6 +25,9 @@ import {Component, OnInit} from '@angular/core';
             </li>
             <li [routerLinkActive]="['active']" class="nav-item fs-5" >
               <a class="nav-link" [routerLink]="['/todoapps']" >Todo apps</a>
+            </li>
+            <li [routerLinkActive]="['active']" class="nav-item fs-5" >
+              <a class="nav-link" [routerLink]="['/about']" >About</a>
             </li>
           </ul>
         </div>

@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import {RouterModule} from "@angular/router";
 import { HttpClientModule } from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import {AboutComponent} from "./components/about/about.component";
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import {FormsModule} from "@angular/forms";
     TodoappsComponent,
     HeaderComponent,
     HomeComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import {FormsModule} from "@angular/forms";
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
       {path: 'todoapps', component: TodoappsComponent},
+      {path: 'about', component: AboutComponent},
       {path: '**', redirectTo: 'home', pathMatch: 'full'},
     ]),
     FormsModule,
